@@ -62,15 +62,24 @@ h2 {
 
 .video-player {
   height: 705px;
-  background: url('./assets/img/video-player.jpg');
+  /* background: url('./assets/img/video-player.jpg'); */
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+/* ----заменяяем бэкграунд вверху на видео------------------ */
 video {
-  z-index: -1;
+/* width: 100%;   */
+  /* z-index: -1; */
+  height: 705px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
 }
 
 .play-btn {
@@ -79,6 +88,7 @@ video {
   background: url(./assets/svg/Play_Unvisited.svg);
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;  
 }
 
 /* ------------footer--------------------------- */
